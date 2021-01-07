@@ -26,6 +26,7 @@ document.querySelector('.glass-morphism-container-hover-effect').onmousemove = (
     .catch((err)=>{console.log('error is' + err)})
     
   }
-  getCovidApi(url)
   
+  setInterval(getCovidApi(url), 1000 * 60);
+
   
